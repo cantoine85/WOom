@@ -12,7 +12,7 @@ class Experience < ActiveRecord::Base
   belongs_to :initial_experience, class_name: "Experience"
 
   # Validations
-  validates :title, :user_id, :initial_experience_id, :status, presence: true
+  validates :title, :user_id, :status, presence: true
   validates :title, length: { minimum:3}
 
 end
