@@ -1,0 +1,32 @@
+.footbar {
+  background: white;
+
+  &-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    //height: 10vh;
+    height-min:50px;
+  }
+
+  &-item {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 4px;
+  }
+
+  img {
+    height: 26px;
+  }
+}
