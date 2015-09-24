@@ -1,0 +1,19 @@
+.card {
+  color: white;
+  text-align:center;
+  background-color: black;
+  height: 50vh;
+  padding: 10vh 0;
+  position: relative;
+  &-category {
+    border-radius: 2px;
+    padding: 5px 23px 5px 17px;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 28px;
+  }
+}
