@@ -1,0 +1,12 @@
+.icon-btn {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  &-text {
+    margin-top: 4px;
+  }
+
+  &:hover {
+    font-weight: 600;
+  }
+}

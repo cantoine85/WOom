@@ -1,0 +1,27 @@
+.topbar {
+  background: transparent;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+  }
+  &-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  &-logo {
+    width: 50px;
+  }
+  &-count {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    img {
+      height: 20px;
+    }
+  }
+}
