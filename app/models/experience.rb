@@ -15,4 +15,7 @@ class Experience < ActiveRecord::Base
   validates :title, :user_id, :status, presence: true
   validates :title, length: { minimum:3}
 
+  # Create global variable
+  CATEGORIES = ['sweetlife', 'culture', 'cinéma', 'balade', 'la vie en rose', 'spectacle', 'musique', 'voyage', 'exposition', 'sensation', 'fun', 'sport', 'plaisir', 'spiritualité', 'food', 'engagement']
+
 end

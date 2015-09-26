@@ -2,6 +2,7 @@ class CreateExperiences < ActiveRecord::Migration
   def change
     create_table :experiences do |t|
       t.string :title
+      t.string :category
       t.string :description
       t.text :address
       t.datetime :start_date

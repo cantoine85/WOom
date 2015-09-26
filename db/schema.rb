@@ -13,7 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150924122112) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -32,9 +31,9 @@ ActiveRecord::Schema.define(version: 20150924122112) do
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
 
-
   create_table "experiences", force: :cascade do |t|
     t.string   "title"
+    t.string   "category"
     t.string   "description"
     t.text     "address"
     t.datetime "start_date"
