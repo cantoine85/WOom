@@ -1,8 +1,17 @@
 .topbar {
   background: transparent;
+  &-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  color: white;
   &-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 40px;
     padding: 10px;
@@ -14,7 +23,7 @@
     z-index: 2;
   }
   &-logo {
-    width: 50px;
+    width: 70px;
   }
   &-count {
     font-size: 20px;
@@ -23,5 +32,11 @@
     img {
       height: 20px;
     }
+  }
+  hr {
+    height: 12px;
+    border-right: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

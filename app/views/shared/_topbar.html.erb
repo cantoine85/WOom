@@ -4,8 +4,17 @@
       <%= image_tag "Woom_logo_white.png" %>
     <% end %>
   </div>
-  <div class="topbar-count">
+<!--   <div class="topbar-count">
       <%= image_tag "heart.png" %>5
       <%= image_tag "check.png" %>12
-  </div>
+  </div> -->
+  <% if user_signed_in? %>
+    <hr>
+    <%= link_to "déconnexion", destroy_user_session_path, method: :delete, class: "topbar-link" %>
+  <% else %>
+      <hr>
+      <%= link_to "inscription", new_user_registration_path, class: "topbar-link" %>
+      <hr>
+      <%= link_to "connexion", new_user_session_path, class: "topbar-link" %>
+  <% end %>
 </div>
