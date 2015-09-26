@@ -15,11 +15,6 @@ class ExperiencesController < ApplicationController
   def create
     @experience = Experience.new(experience_params)
     @experience.user = current_user
-    if params[:status]
-      @experience.status = "done"
-    else
-      @experience.status = "to_do"
-    end
     if @experience.save
       redirect_to experience_path(@experience)
     else

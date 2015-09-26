@@ -11,17 +11,33 @@
 }
 
 .ghost-btn {
-  color: white;
+  display: inline-block;
   background-color: rgba(0,0,0,0.2);
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
   padding: 20px 30px 20px 30px;
-  border: 1px solid white;
   border-radius: 0.1em;
-  &:hover {
-    text-decoration:none;
-    background:transparent;
+  line-height: 10px;
+  &-white {
     color: white;
+    border: 1px solid white;
+    &:hover {
+      text-decoration:none;
+      color: darken(white, 10%);
+      background-color: rgba(0, 0, 0, 0.3);
+      border-color: (white, 10%);
+    }
+  }
+  &-grey {
+    color: $grey-dark;
+    border: 1px solid $grey-dark;
+    background:transparent;
+    &:hover {
+      text-decoration:none;
+      color: lighten($grey-dark, 15%);
+      background-color: darken(white, 12%);
+      border-color: lighten($grey-dark, 15%);
+    }
   }
 }

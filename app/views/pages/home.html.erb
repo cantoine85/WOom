@@ -1,2 +1,48 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="padding-bottom-70 text-center">
+  <div class="home-banner bg-intro">
+    <span class="home-banner-shadow"></span>
+    <div class="home-banner-content">
+      <h1>Vivez vos expériences</h1>
+    </div>
+    <%= link_to "générateurs d'idées", experiences_path, class: "ghost-btn ghost-btn-white" %>
+  </div>
+  <div class="text-banner text-center">
+    <p>Qu'allez-vous vivre ce mois-ci?</p>
+  </div>
+  <div class="category-banner bg-foodie">
+    <div class="category-banner-content">
+      <h2>Foodie</h2>
+    </div>
+    <span class="category-banner-shadow"></span>
+  </div>
+  <div class="category-banner bg-sport">
+    <div class="category-banner-content">
+      <h2>Sport</h2>
+    </div>
+    <span class="category-banner-shadow"></span>
+  </div>
+  <div class="category-banner bg-sweetlife">
+    <div class="category-banner-content">
+      <h2>Sweetlife</h2>
+    </div>
+    <span class="category-banner-shadow"></span>
+  </div>
+  <div class="category-banner bg-evasion">
+    <div class="category-banner-content">
+      <h2>Voyage</h2>
+    </div>
+    <span class="category-banner-shadow"></span>
+  </div>
+  <div class="category-banner bg-spectacle">
+    <div class="category-banner-content">
+      <h2>Spectacle</h2>
+    </div>
+    <span class="category-banner-shadow"></span>
+  </div>
+  <div class="text-banner text-center">
+    <p>Créer vos expériences personnelles</p>
+    <%= link_to "Créer", new_experience_path, class: "ghost-btn ghost-btn-grey" %>
+  </div>
+</div>
+
+
