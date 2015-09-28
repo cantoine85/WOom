@@ -1,6 +1,6 @@
 <div class="card" style="background-image: url(<%= @experience.picture.url(:medium) %>);">
   <div class="card-space"></div>
-  <span class="card-category">
+  <span class="card-category bg-color-<%= @experience.category %>">
     <%= @experience.category.capitalize %>
   </span>
   <div class="card-shadow"></div>
@@ -8,6 +8,9 @@
     <h1><%= @experience.title.capitalize %></h1>
     <p>
       inspiré par <%= @experience.user.email %>
+      <% if @experience.user.picture %>
+        <%= image_tag @experience.user.picture, class: "avatar" %>
+      <% end %>
     </p>
   </div>
 </div>

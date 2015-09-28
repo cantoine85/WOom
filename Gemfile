@@ -18,6 +18,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'activeadmin', github: 'activeadmin'
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'binding_of_caller'
