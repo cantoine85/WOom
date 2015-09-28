@@ -4,16 +4,19 @@ Experience.destroy_all
 # Create 3 users
 users = [
   {
+    first_name: "Claire",
     email: "claire.antoine@gmail.com",
     password: "password"
   },
 
   {
+    first_name: "Gaspard",
     email: "gaspard.vorilhon@gmail.com",
     password: "password"
   },
 
   {
+    first_name: "Guillaume",
     email: "guillaume.vorihon@gmail.com",
     password: "password"
   }
