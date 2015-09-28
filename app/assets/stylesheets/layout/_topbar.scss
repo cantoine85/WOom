@@ -1,6 +1,7 @@
 .topbar {
   background: transparent;
   &-link {
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 14px;
@@ -43,20 +44,20 @@
 
   &-dropdown-menu {
     margin-top: 15px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    border-color: #E6E6E6;
-    li > a {
-      transition: color 0.3s ease;
-      font-weight: lighter !important;
-      color: #999999 !important;
-      font-size: 15px !important;
-      line-height: 22px !important;
-      padding: 10px 20px;
-      &:hover {
-        background: transparent !important;
-        color: black !important;
-      }
-    }
+    // box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    // border-color: #E6E6E6;
+    // li > a {
+    //   transition: color 0.3s ease;
+    //   font-weight: lighter !important;
+    //   color: #999999 !important;
+    //   font-size: 15px !important;
+    //   line-height: 22px !important;
+    //   padding: 10px 20px;
+    //   &:hover {
+    //     background: transparent !important;
+    //     color: black !important;
+    //   }
+    // }
     &:before {
       content: ' ';
       height: 10px;
@@ -71,8 +72,10 @@
     }
   }
 
-  ul {
-    margin: 0px;
+  &-inline-menu {
+    ul {
+      margin: 0px;
+    }
   }
 
   hr {

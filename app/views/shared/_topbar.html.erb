@@ -9,16 +9,21 @@
       <%= image_tag "check.png" %>12
   </div> -->
   <% if user_signed_in? %>
+  <div class="topbar-item">
     <div class="dropdown">
       <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", "data-toggle" => "dropdown" %>
       <ul class="dropdown-menu dropdown-menu-right topbar-dropdown-menu">
         <li>
-          <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "topbar-link" %>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+             <i class="fa fa-sign-out"></i> Déconnexion
+          <% end %>
         </li>
       </ul>
     </div>
+  </div>
+
   <% else %>
-    <div>
+    <div class="topbar-inline-menu">
       <ul class="list-inline">
         <li>
           <%= link_to "inscription", new_user_registration_path, class: "topbar-link" %>
