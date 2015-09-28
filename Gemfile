@@ -16,6 +16,8 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'activeadmin', github: 'activeadmin'
+gem 'aws-sdk', '< 2.0'
+gem 'paperclip'
 
 group :development, :test do
   gem 'binding_of_caller'

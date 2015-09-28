@@ -5,6 +5,7 @@
               as: :select,
               collection: Experience::CATEGORIES,
               prompt: "Choisissez une catégorie" %>
+  <%= f.input :picture %>
   <%= f.input :description,
               label: false,
               as: :text,
