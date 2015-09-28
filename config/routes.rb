@@ -5,4 +5,8 @@ Rails.application.routes.draw do
 
   resources :experiences, only: [:index, :new, :create, :show]
 
+  namespace :account do
+    resources :experiences
+  end
+
 end
