@@ -1,0 +1,75 @@
+// Background Colors for categories
+
+body {
+  height: 500px;
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+}
+
+.rect h1 {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-weight: 400;
+  font-size: 17px;
+  padding: 40px 0;
+}
+
+.rect {
+  color: white;
+  text-align:center;
+}
+
+  .bg-white {
+    background: white;
+  }
+  .bg-sweetlife {
+    background-color: #e9c9b5;
+  }
+  .bg-culture {
+    background: #9dc3d4;
+  }
+  .bg-cinéma {
+    background: $cinema;
+  }
+  .bg-balade {
+    background: #adcdc2;
+  }
+  .bg-la-vie-en-rose {
+    background: #e3868f;
+  }
+  .bg-spectacle {
+    background: #ff1744;
+  }
+  .bg-musique {
+    background: #32B796;
+  }
+  .bg-voyage {
+    background: #7accb8;
+  }
+  .bg-exposition {
+    background: #818F84;
+  }
+  .bg-sensation {
+    background: #00b2ca;
+  }
+  .bg-fun {
+    background: #D9CE52;
+  }
+  .bg-plaisir {
+    background: #00FBE4;
+  }
+  .bg-sport {
+    background: #FF8812;
+  }
+  .bg-spiritualité {
+    background: #4F84C4;
+  }
+  .bg-food {
+    background: #A31A3B;
+  }
+  .bg-engagement {
+    background: #967643;
+  }
+
+  .bg-cinema {
+    background: black;
+  }
+

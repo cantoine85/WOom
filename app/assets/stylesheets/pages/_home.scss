@@ -2,3 +2,38 @@
  * SASS code SPECIFIC TO your home page
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
+.text-banner {
+  p {
+    padding: 30px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $gray-dark;
+    line-height: 1.1;
+  }
+}
+
+// Background with images
+.bg {
+  background-size:cover;
+  background-position:center;
+  &-intro {
+    background-image: image-url('home_banner.jpg');
+  }
+  &-foodie {
+    background-image: image-url('food.jpg');
+  }
+  &-evasion {
+    background-image: image-url('combi_evasion.jpeg');
+  }
+  &-sport {
+    background-image: image-url('sport.jpeg');
+  }
+  &-spectacle {
+    background-image: image-url('spectacle.jpg');
+  }
+  &-sweetlife {
+    background-image: image-url('pecher.jpeg');
+  }
+}
+
+

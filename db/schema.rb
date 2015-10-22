@@ -11,8 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150924122112) do
-
+ActiveRecord::Schema.define(version: 20150928210057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,9 +31,9 @@ ActiveRecord::Schema.define(version: 20150924122112) do
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
 
-
   create_table "experiences", force: :cascade do |t|
     t.string   "title"
+    t.string   "category"
     t.string   "description"
     t.text     "address"
     t.datetime "start_date"
@@ -46,6 +45,10 @@ ActiveRecord::Schema.define(version: 20150924122112) do
     t.integer  "rating"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
   end
 
   add_index "experiences", ["initial_experience_id"], name: "index_experiences_on_initial_experience_id", using: :btree
@@ -66,6 +69,13 @@ ActiveRecord::Schema.define(version: 20150924122112) do
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
     t.boolean  "admin",                  default: false, null: false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "picture"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "token"
+    t.datetime "token_expiry"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

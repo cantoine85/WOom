@@ -15,4 +15,13 @@ class Experience < ActiveRecord::Base
   validates :title, :user_id, :status, presence: true
   validates :title, length: { minimum:3}
 
+  has_attached_file :picture,
+    styles: { medium: "300x300>", thumb: "100x100>" }
+
+  validates_attachment_content_type :picture,
+    content_type: /\Aimage\/.*\z/
+
+  # Create global variable
+  CATEGORIES = ['sweetlife', 'culture', 'cinéma', 'balade', 'la vie en rose', 'spectacle', 'musique', 'voyage', 'exposition', 'sensation', 'fun', 'sport', 'plaisir', 'spiritualité', 'food', 'engagement']
+
 end

@@ -4,16 +4,19 @@ Experience.destroy_all
 # Create 3 users
 users = [
   {
+    first_name: "Claire",
     email: "claire.antoine@gmail.com",
     password: "password"
   },
 
   {
+    first_name: "Gaspard",
     email: "gaspard.vorilhon@gmail.com",
     password: "password"
   },
 
   {
+    first_name: "Guillaume",
     email: "guillaume.vorihon@gmail.com",
     password: "password"
   }
@@ -30,22 +33,32 @@ end
   # validates :title, :user_id, :initial_experience_id, :status, presence: true
   # validates :title, length: { minimum:3}
 
+#CATEGORIES = ['sweetlife', 'culture', 'cinéma', 'balade', 'la vie en rose', 'spectacle', 'musique', 'voyage', 'exposition', 'sensation', 'fun', 'sport', 'plaisir', 'spiritualité', 'food', 'engagement']
+
 experiences = [
   {
     title: "Faire de la randonnée dans le cantal",
+    category: "balade",
+    picture_file_name: "combi_evasion.jpeg",
     status: "done"
   },
   {
     title: "Découvrir l'église notre dame",
+    category: "balade",
+    picture_file_name: "pink-sky.jpg",
     status: "to do"
   },
 
   {
     title: "Déguster un tournedos à l'avenue",
+    category: "food",
+    picture_file_name: "food.jpg",
     status: "done"
   },
   {
     title: "Dévaler le Tarn en Kayak",
+    picture_file_name: "pecher.jpg",
+    category: "balade",
     status: "done"
   }
 

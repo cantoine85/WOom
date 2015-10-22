@@ -1,0 +1,27 @@
+.bar {
+  z-index: 3;
+  &-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+  }
+  &-absolute {
+    position: absolute;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    &-white {
+      background: white;
+    }
+  }
+  &-link {
+    &:hover {
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+
