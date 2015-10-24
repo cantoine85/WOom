@@ -1,0 +1,13 @@
+<%= simple_form_for experience, defaults: {label:false} do |f| %>
+  <%= f.input :title,
+              placeholder: "Faire un road trip en combi..." %>
+  <%= f.input :category,
+              as: :select,
+              collection: Experience::CATEGORIES,
+              prompt: "Choisissez une catégorie" %>
+  <%= f.input :picture %>
+  <%= f.input :user,
+              placeholder: "Inspiré par"
+  %>
+  <%= f.button :submit, "Créez", class: "ghost-btn ghost-btn-white" %>
+<% end %>

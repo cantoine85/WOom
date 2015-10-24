@@ -5,6 +5,10 @@ class ExperiencesController < ApplicationController
     @experience = Experience.first
   end
 
+  def index_admin
+    @experience = Experience.where()
+  end
+
   def show
     @experience = Experience.find(params[:id])
   end

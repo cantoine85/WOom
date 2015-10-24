@@ -1,0 +1,33 @@
+<%= simple_form_for @experience, defaults: {label:false} do |f| %>
+  <%= f.input :title,
+              placeholder: "Faire un road trip en combi..." %>
+  <%= f.input :category,
+              as: :select,
+              collection: Experience::CATEGORIES,
+              prompt: "Choisissez une catégorie" %>
+  <%= f.input :picture %>
+  <%= f.input :description,
+              label: false,
+              as: :text,
+              placeholder: "Description" %>
+  <%= f.input :address,
+              label: false,
+              placeholder: "Adresse" %>
+  <%= f.input :start_date,
+              label: false,
+              placeholder: "Début",
+              as: :string,
+              input_html: {class: "datetime date-inline"} %>
+  <%= f.input :end_date,
+              label: false,
+              placeholder: "Fin",
+              as: :string,
+              input_html: {class: "datetime date-inline"} %>
+  <%= f.input :status,
+              label: false,
+              collection: [["A vivre", false], ["S'en souvenir",true]],
+              as: :radio_buttons,
+              item_wrapper_class: "inline white",
+              checked: false %>
+  <%= f.button :submit, "Créez", class: "ghost-btn ghost-btn-white" %>
+<% end %>

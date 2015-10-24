@@ -3,7 +3,7 @@ class CreateExperiences < ActiveRecord::Migration
     create_table :experiences do |t|
       t.string :title
       t.string :category
-      t.string :description
+      t.text :description
       t.text :address
       t.datetime :start_date
       t.datetime :end_date

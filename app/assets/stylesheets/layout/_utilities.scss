@@ -31,6 +31,10 @@ h2 {
   padding-bottom: 70px;
 }
 
+.padded-10 {
+  padding: 10px 0px;
+}
+
 // Backgrounds
 .bg-text {
   background: #4a4a4a;
@@ -54,62 +58,45 @@ h2 {
   &-sign-up {
     background-image:image-url('beach.png');
   }
+  &-home-banner {
+    background-image:image-url('home_banner');
+  }
 }
 
 
 
 // Background Colors for categories
-.bg-color {
-  &-white {
+.bg-color-white {
     background: white;
+}
+
+// Categories color
+//Creative, Duo, Family, Foodies, Novels, Sports, Sweetlife, Travels, Trendy
+
+.bg {
+  &-creative {
+    background-color: $green;
+  }
+  &-duo {
+    background-color: $pink;
+  }
+  &-family {
+    background-color: $lighter-green;
+  }
+  &-foodies {
+    background-color: $dark-red;
+  }
+  &-novels {
+    background-color: $blue;
+  }
+  &-sports {
+    background-color: $orange;
   }
   &-sweetlife {
-    background: $sweetlife;
+    background-color: $beige;
   }
-  &-culture {
-    background: $culture;
-  }
-  &-cinéma {
-    background: $cinema;
-  }
-  &-balade {
-    background: $balade;
-  }
-  &-la.vie.en.rose {
-    background: $lavieenrose;
-  }
-  &-spectacle {
-    background: $spectacle;
-  }
-  &-musique {
-    background: $musique;
-  }
-  &-voyage {
-    background: $voyage;
-  }
-  &-exposition {
-    background: $exposition;
-  }
-  &-sensation {
-    background: $sensation;
-  }
-  &-fun {
-    background: $fun;
-  }
-  &-plaisir {
-    background: $plaisir;
-  }
-  &-sport {
-    background: $sport;
-  }
-  &-spiritualité {
-    background: $spiritualite;
-  }
-  &-food {
-    background: $food;
-  }
-  &-engagement {
-    background: $engagement;
+  &-trendy {
+    background-color: $red;
   }
 }
 // Icons
@@ -132,7 +119,7 @@ h2 {
 }
 
 .grey-dark {
-  color: $gray-dark;
+  color: $grey-dark;
 }
 
 
