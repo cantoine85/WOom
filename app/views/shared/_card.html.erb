@@ -1,6 +1,6 @@
 <div class="card" style="background-image: url(<%= experience.picture.url(:medium)%>);">
   <div class="card-space"></div>
-  <span class="card-category bg-color-<%= experience.category %>">
+  <span class="card-category bg-<%= experience.category.downcase %>">
     <%= experience.category.capitalize %>
   </span>
   <div class="card-shadow"></div>
