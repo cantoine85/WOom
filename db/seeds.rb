@@ -38,27 +38,27 @@ end
 experiences = [
   {
     title: "Faire de la randonnée dans le cantal",
-    category: "balade",
+    category: "Family",
     picture_file_name: "combi_evasion.jpeg",
     status: "done"
   },
   {
     title: "Découvrir l'église notre dame",
-    category: "balade",
+    category: "Sweetlife",
     picture_file_name: "pink-sky.jpg",
     status: "to do"
   },
 
   {
     title: "Déguster un tournedos à l'avenue",
-    category: "food",
+    category: "Foodies",
     picture_file_name: "food.jpg",
     status: "done"
   },
   {
     title: "Dévaler le Tarn en Kayak",
     picture_file_name: "pecher.jpg",
-    category: "balade",
+    category: "Sports",
     status: "done"
   }
 

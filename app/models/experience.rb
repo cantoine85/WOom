@@ -12,7 +12,7 @@ class Experience < ActiveRecord::Base
   belongs_to :initial_experience, class_name: "Experience"
 
   # Validations
-  validates :title, :user_id, :status, presence: true
+  validates :title, :user, :category, presence: true
   validates :title, length: { minimum:3}
 
   has_attached_file :picture,
@@ -20,8 +20,19 @@ class Experience < ActiveRecord::Base
 
   validates_attachment_content_type :picture,
     content_type: /\Aimage\/.*\z/
+  # validates :picture, presence: true
 
   # Create global variable
-  CATEGORIES = ['sweetlife', 'culture', 'cinéma', 'balade', 'la vie en rose', 'spectacle', 'musique', 'voyage', 'exposition', 'sensation', 'fun', 'sport', 'plaisir', 'spiritualité', 'food', 'engagement']
+  CATEGORIES = [
+    'Creative',
+    'Duo',
+    'Family',
+    'Foodies',
+    'Novels',
+    'Sports',
+    'Sweetlife',
+    'Travels',
+    'Trendy'
+  ]
 
 end
