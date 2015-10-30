@@ -1,4 +1,16 @@
-<%= experience.category.capitalize %>
-<%= experience.title.capitalize %>
-<%= experience.user.first_name %>
-<%= experience.user.picture %>
+<div class="card-admin" style="background-image: url(<%= experience.picture.url(:medium)%>);">
+  <%= image_tag 'Woom_logo_white.png' , class: "card-admin-logo" %>
+  <span class="card-admin-category bg-<%= experience.category.downcase %>">
+    <%= experience.category.capitalize %>
+  </span>
+  <div class="card-admin-shadow"></div>
+  <%= link_to admin_experience_path(experience) do %>
+    <div class="card-admin-content">
+      <h1><%= experience.title.capitalize %></h1>
+      <p>
+
+      </p>
+    </div>
+  <% end %>
+  <div class="card-admin-hashtag">#WOom<%= experience.category.capitalize%></div>
+</div>
