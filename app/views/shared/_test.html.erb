@@ -8,7 +8,7 @@
     <div class="card-admin-content">
       <h1><%= experience.title.capitalize %></h1>
       <p>
-        <%= link_to "inspiré par " + experience.user.first_name, admin_user_path(experience.user) %>
+        inspiré par <%= experience.user.first_name %>
       </p>
     </div>
   <% end %>
