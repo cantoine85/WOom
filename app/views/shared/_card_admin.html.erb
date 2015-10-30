@@ -1,4 +1,4 @@
-<div class="card-admin" style="background-image: url(<%= experience.picture.url(:medium)%>);">
+<!-- <div class="card-admin" style="background-image: url(<%= experience.picture.url(:medium)%>);"> -->
   <%= image_tag 'Woom_logo_white.png' , class: "card-admin-logo" %>
   <span class="card-admin-category bg-<%= experience.category.downcase %>">
     <%= experience.category.capitalize %>
@@ -6,7 +6,7 @@
   <div class="card-admin-shadow"></div>
   <%= link_to admin_experience_path(experience) do %>
     <div class="card-admin-content">
-      <h1><%= #experience.title.capitalize %></h1>
+      <h1><%= experience.title.capitalize %></h1>
       <p>
         <%= link_to "inspiré par " + experience.user.first_name, admin_user_path(experience.user) %>
         <% if experience.user.picture %>
