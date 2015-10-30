@@ -35,9 +35,9 @@ ActiveAdmin.register Experience do
   filter :created_at
 
   # Display index as a grid
-  index as: :grid, columns: 2 do |experience|
-    render "shared/card_admin", experience: experience
-  end
+  # index as: :grid, columns: 2 do |experience|
+  #   render "shared/card_admin", experience: experience
+  # end
 
   # Display index as a table
   index do
