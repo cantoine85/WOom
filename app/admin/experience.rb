@@ -40,7 +40,7 @@ ActiveAdmin.register Experience do
   # end
 
   index as: :grid, columns: 2 do |experience|
-    render "shared/test"
+    render "shared/test", experience: experience
   end
 
   # Display index as a table
