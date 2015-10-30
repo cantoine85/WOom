@@ -6,8 +6,7 @@
   <div class="card-admin-shadow"></div>
   <%= link_to admin_experience_path(experience) do %>
     <div class="card-admin-content">
-      <% raise %>
-      <h1><%= experience.title.capitalize %></h1>
+      <h1><%= #experience.title.capitalize %></h1>
       <p>
         <%= link_to "inspiré par " + experience.user.first_name, admin_user_path(experience.user) %>
         <% if experience.user.picture %>
