@@ -4,13 +4,15 @@
     <%= experience.category.capitalize %>
   </span>
   <div class="card-shadow"></div>
-  <div class="card-content">
-    <h1><%= experience.title.capitalize %></h1>
-    <p>
-      inspiré par <%= experience.user.first_name %>
-      <% if experience.user.picture %>
-        <%= image_tag experience.user.picture, class: "avatar" %>
-      <% end %>
-    </p>
-  </div>
+  <%= link_to experiences_path() do %>
+    <div class="card-content">
+      <h1><%= experience.title.capitalize %></h1>
+      <p>
+        inspiré par <%= experience.user.first_name %>
+        <% if experience.user.picture %>
+          <%= image_tag experience.user.picture, class: "avatar" %>
+        <% end %>
+      </p>
+    </div>
+  <% end %>
 </div>

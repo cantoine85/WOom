@@ -2,7 +2,8 @@ class ExperiencesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
-    @experience = Experience.first
+    @experiences = Experience.all
+    @experience = @experiences.sample
   end
 
   def show
