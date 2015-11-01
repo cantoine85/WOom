@@ -34,6 +34,7 @@ ActiveAdmin.register User do
       f.input :first_name
       f.input :last_name
       f.input :email
+      f.input :picture
     end
     f.inputs "Admin" do
       f.input :admin
