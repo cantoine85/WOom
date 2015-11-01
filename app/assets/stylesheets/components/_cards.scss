@@ -1,9 +1,13 @@
 .card {
   color: white;
-  height: 50vh;
+  height: 265px;
   position: relative;
   z-index: 0;
   background-size: cover;
+  a {
+    color:white;
+  }
+
   &-space {
     height:50px;
   }

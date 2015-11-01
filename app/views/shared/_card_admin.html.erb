@@ -7,12 +7,14 @@
   <%= link_to admin_experience_path(experience) do %>
     <div class="card-admin-content">
       <h1><%= experience.title.capitalize %></h1>
-      <p>
-        <%= link_to "inspiré par " + experience.user.first_name, admin_user_path(experience.user) %>
-        <% if experience.user.picture %>
-          <%= image_tag experience.user.picture, class: "avatar" %>
-        <% end %>
-      </p>
+      <%= link_to admin_user_path(experience.user) do %>
+        <p>
+          inspiré par <%= experience.user.first_name %>
+          <% if experience.user.picture %>
+            <%= image_tag experience.user.picture, class: "avatar" %>
+          <% end %>
+        </p>
+      <% end %>
     </div>
   <% end %>
   <div class="card-admin-hashtag">#WOom<%= experience.category.capitalize%></div>
