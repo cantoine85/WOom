@@ -7,15 +7,19 @@
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
 
+
+
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
 
-
 // Graphical variables
 @import "config/variables";
 @import "config/bootstrap_variables";
+
+@import "components/index";
 @import "admin/style";
+
 
 
 // Overriding any non-variable SASS must be done after the fact.

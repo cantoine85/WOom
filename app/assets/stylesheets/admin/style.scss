@@ -27,6 +27,9 @@
     left: 0px;
     top: 50px;
     z-index: 2;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400 ;
   }
   &-shadow {
     position: absolute;
@@ -44,7 +47,14 @@
     h1 {
       color: white;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 28px;
+      font-family: Lato, sans-serif;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: "Open Sans";
+      font-weight: 400;
     }
   }
   &-hashtag {
