@@ -12,16 +12,18 @@ a {
   }
 }
 
+h1, h2 {
+  color: white;
+}
+
 h1 {
-  font-weight: 400;
-  font-size: 25px;
-  color: white;
+  font-size: 28px;
 }
+
 h2 {
-  font-weight: 300;
   font-size: 25px;
-  color: white;
 }
+
 // Margin
 .margin-topbar {
   margin-top: 50px;
